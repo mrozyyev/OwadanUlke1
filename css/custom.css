@@ -1,0 +1,262 @@
+/* 
+ This CSS file is used to override the existing styles of the theme.
+ You can change the article headings, fonts, colors, etc.
+*/
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slide-text-block{
+    padding: 20px;
+    border-radius: 4px;
+
+    animation: rainbow 5s linear infinite;
+    background: rgba(60, 255, 0, 0.5)
+
+}
+
+  @keyframes rainbow {
+    0%,to {
+        background: rgba(228, 31, 80, 0.5)
+    }
+
+    50% {
+        background: rgba(255, 165, 0, 0.5)
+    }
+
+    75% {
+        background: rgba(63, 206, 50, 0.562)
+    }
+
+}
+
+
+.container {
+    position: relative;
+    max-width: 80%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+
+  .container {
+    overflow: hidden;
+  }
+  
+  .filterDiv {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: rgba(63, 206, 50);
+    color: white;
+  }
+
+
+    /* Style the buttons */
+    .com-btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    
+    /* Add a light grey background on mouse-over */
+    .com-btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background to the active button */
+    .com-btn.active {
+      background-color: rgba(63, 206, 50);
+      color: white;
+    }
+
+  .bg-green{
+    background-color: green;
+  }
+  .bg-red{
+    background-color: red;
+  }
+  .bg-yellow{
+    background-color: rgb(186, 186, 58);
+  }
+
+
+
+  
+.CU-container{
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.CU-container .CU-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CU-container .CU-content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.CU-content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.CU-content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.CU-content .left-side .details i{
+  font-size: 30px;
+  color: #3b9320;
+  margin-bottom: 10px;
+}
+.CU-content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.CU-content .left-side .details .text-one,
+.CU-content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+
+.CU-container .CU-content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.CU-content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3b9320;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3b9320;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #3b9320;
+}
+
+@media (max-width: 950px) {
+  .CU-container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .CU-container .CU-content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .CU-container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .CU-container .CU-content{
+    flex-direction: column-reverse;
+  }
+ .CU-container .CU-content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .CU-container .CU-content .left-side::before{
+   display: none;
+ }
+ .CU-container .CU-content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
