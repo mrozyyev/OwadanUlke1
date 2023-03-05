@@ -249,6 +249,7 @@ html {
    width: 100%;
    flex-direction: row;
    margin-top: 40px;
+   margin-left: 20px;
    justify-content: center;
    flex-wrap: wrap;
  }
